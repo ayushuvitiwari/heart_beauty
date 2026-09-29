@@ -1,95 +1,58 @@
-// import { NavLink } from "react-router-dom";
-// import { FiMenu, FiX } from "react-icons/fi";
-// import { useState } from "react";
-// import Logo from "../assets/logo.png";
+import { NavLink } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
+import { useState } from "react";
+import Logo from "../assets/logo.png";
 
-// const Navbar = () => {
-//     const [menuOpen, setMenuOpen] = useState(false);
+const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-//     const navLinks = [
-//         { name: "Home", path: "/" },
-//         { name: "About", path: "/about" },
-//         { name: "Services", path: "/services" },
-//         { name: "Gallery", path: "/gallery" },
-//         { name: "Pricing", path: "/pricing" },
-//         { name: "Contact", path: "/contact" }
-//     ];
+    return (
+        <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
+            <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+                <nav className="h-20 flex items-center justify-between overflow-hidden px-1">
 
-//     return (
-//         <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
-//             <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-//                 <nav className="h-20 flex items-center justify-between">
+                    <NavLink to="/">
+                        <img src={Logo} alt="The Heart Beauty" className="w-auto h-20 object-contain hover:scale-110 transition-transform duration-200" />
+                    </NavLink>
 
-//                     <NavLink to="/" className="shrink-0">
-//                         <img src={Logo} alt="Salon Logo" className="w-14 h-14 object-contain" />
-//                     </NavLink>
+                    <div className="hidden lg:flex items-center gap-7">
+                        <NavLink to="/" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Home</NavLink>
+                        <NavLink to="/about" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">About</NavLink>
+                        <NavLink to="/services" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Services</NavLink>
+                        <NavLink to="/gallery" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Gallery</NavLink>
+                        <NavLink to="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Pricing</NavLink>
+                        <NavLink to="/contact" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Contact</NavLink>
+                    </div>
 
-//                     <div className="hidden lg:flex items-center gap-8">
-//                         {navLinks.map((item) => (
-//                             <NavLink
-//                                 key={item.path}
-//                                 to={item.path}
-//                                 className={({ isActive }) =>
-//                                     `text-[15px] font-medium transition-colors ${
-//                                         isActive
-//                                             ? "text-[var(--red-primary)]"
-//                                             : "text-gray-700 hover:text-[var(--red-primary)]"
-//                                     }`
-//                                 }
-//                             >
-//                                 {item.name}
-//                             </NavLink>
-//                         ))}
-//                     </div>
+                    <NavLink
+                        to="/appointment"
+                        className="hidden lg:block px-6 py-3 rounded-full bg-[var(--bg-primary)] text-white text-sm font-semibold hover:scale-104 transition-all duration-200"
+                    >
+                        Appointment
+                    </NavLink>
 
-//                     <NavLink
-//                         to="/appointment"
-//                         className="hidden lg:block px-6 py-3 rounded-full bg-[var(--red-primary)] text-white text-sm font-semibold hover:opacity-90 transition-all"
-//                     >
-//                         Appointment
-//                     </NavLink>
+                    <button
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        className="lg:hidden text-2xl text-gray-800"
+                    >
+                        {menuOpen ? <FiX /> : <FiMenu />}
+                    </button>
+                </nav>
 
-//                     <button
-//                         onClick={() => setMenuOpen(!menuOpen)}
-//                         className="lg:hidden text-2xl text-gray-800"
-//                     >
-//                         {menuOpen ? <FiX /> : <FiMenu />}
-//                     </button>
-//                 </nav>
+                {menuOpen && (
+                    <div className="lg:hidden pb-5 bg-white">
+                        <NavLink to="/" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Home</NavLink>
+                        <NavLink to="/about" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">About</NavLink>
+                        <NavLink to="/services" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Services</NavLink>
+                        <NavLink to="/gallery" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Gallery</NavLink>
+                        <NavLink to="/pricing" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Pricing</NavLink>
+                        <NavLink to="/contact" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Contact</NavLink>
+                        <NavLink to="/appointment" onClick={() => setMenuOpen(false)} className="block mt-2 px-4 py-3 text-center bg-pink-600 text-white rounded-lg">Appointment</NavLink>
+                    </div>
+                )}
+            </div>
+        </header>
+    );
+};
 
-//                 {menuOpen && (
-//                     <div className="lg:hidden pb-5">
-//                         <div className="flex flex-col gap-2">
-//                             {navLinks.map((item) => (
-//                                 <NavLink
-//                                     key={item.path}
-//                                     to={item.path}
-//                                     onClick={() => setMenuOpen(false)}
-//                                     className={({ isActive }) =>
-//                                         `px-4 py-3 rounded-lg text-sm font-medium ${
-//                                             isActive
-//                                                 ? "bg-[var(--red-primary)] text-white"
-//                                                 : "text-gray-700 hover:bg-gray-100"
-//                                         }`
-//                                     }
-//                                 >
-//                                     {item.name}
-//                                 </NavLink>
-//                             ))}
-
-//                             <NavLink
-//                                 to="/appointment"
-//                                 onClick={() => setMenuOpen(false)}
-//                                 className="mt-2 px-4 py-3 rounded-lg text-center bg-[var(--red-primary)] text-white text-sm font-semibold"
-//                             >
-//                                 Appointment
-//                             </NavLink>
-//                         </div>
-//                     </div>
-//                 )}
-//             </div>
-//         </header>
-//     );
-// };
-
-// export default Navbar;
+export default Navbar;
