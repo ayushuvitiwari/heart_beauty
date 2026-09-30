@@ -102,15 +102,15 @@ const Home = () => {
     <>
       <Navbar />
 
-      <section className="h-[76vh] w-full flex items-center justify-center mt-20 bg-[var(--bg-primary2)]">
-        <div className='w-[98%] rounded-3xl overflow-hidden'>
+      <section className="h-[55vh] sm:h-[65vh] lg:h-[76vh] w-full flex items-center justify-center mt-8 lg:mt-20 bg-[var(--bg-primary2)]">
+        <div className='w-[96%] sm:w-[98%] rounded-2xl sm:rounded-3xl overflow-hidden'>
           <Swiper
             modules={[Autoplay, Pagination]}
             slidesPerView={1}
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-            className="w-full h-[500px]"
+            className="w-full h-[300px] sm:h-[400px] lg:h-[500px]"
           >
             <SwiperSlide>
               <img src={Image1} alt="Salon" className="w-full h-full object-cover rounded-3xl" />
@@ -145,58 +145,58 @@ const Home = () => {
               Beauty That Feels Like You
             </h2>
 
-            <p className="mt-5 text-gray-600 leading-7">
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">
               Discover a place where beauty meets care. Our professional
               team is here to make you feel confident, beautiful and special.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6 mt-8 sm:mt-10 lg:mt-12">
 
-            <div className="group text-center p-8 rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-white text-2xl shadow-sm">
+            <div className="group text-center p-3 sm:p-5 lg:p-8 rounded-xl sm:rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-white text-lg sm:text-xl lg:text-2xl shadow-sm">
                 ✂️
               </div>
-              <h3 className="mt-5 text-xl font-semibold">
+              <h3 className="mt-3 sm:mt-4 lg:mt-5 text-sm sm:text-lg lg:text-xl font-semibold">
                 Hair Services
               </h3>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-2 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">
                 Haircuts, styling, coloring and treatments.
               </p>
             </div>
 
-            <div className="group text-center p-8 rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-white text-2xl shadow-sm">
+            <div className="group text-center p-3 sm:p-5 lg:p-8 rounded-xl sm:rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-white text-lg sm:text-xl lg:text-2xl shadow-sm">
                 💆
               </div>
-              <h3 className="mt-5 text-xl font-semibold">
+              <h3 className="mt-3 sm:mt-4 lg:mt-5 text-sm sm:text-lg lg:text-xl font-semibold">
                 Facial & Spa
               </h3>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-2 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">
                 Relaxing facials and refreshing spa treatments.
               </p>
             </div>
 
-            <div className="group text-center p-8 rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-white text-2xl shadow-sm">
+            <div className="group text-center p-3 sm:p-5 lg:p-8 rounded-xl sm:rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-white text-lg sm:text-xl lg:text-2xl shadow-sm">
                 💄
               </div>
-              <h3 className="mt-5 text-xl font-semibold">
+              <h3 className="mt-3 sm:mt-4 lg:mt-5 text-sm sm:text-lg lg:text-xl font-semibold">
                 Makeup
               </h3>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-2 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">
                 Elegant makeup for every special occasion.
               </p>
             </div>
 
-            <div className="group text-center p-8 rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
-              <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-white text-2xl shadow-sm">
+            <div className="group text-center p-3 sm:p-5 lg:p-8 rounded-xl sm:rounded-2xl bg-[#fff8fa] hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-white text-lg sm:text-xl lg:text-2xl shadow-sm">
                 💅
               </div>
-              <h3 className="mt-5 text-xl font-semibold">
+              <h3 className="mt-3 sm:mt-4 lg:mt-5 text-sm sm:text-lg lg:text-xl font-semibold">
                 Nails & Care
               </h3>
-              <p className="mt-3 text-sm text-gray-600">
+              <p className="mt-2 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">
                 Beautiful nails with professional care.
               </p>
             </div>
@@ -251,13 +251,6 @@ const Home = () => {
                 >
                   Discover More
                 </NavLink>
-
-                <NavLink
-                  to="/appointment"
-                  className="px-6 py-3 rounded-full border border-[var(--bg-primary)] text-[var(--bg-primary)] font-medium hover:bg-[var(--bg-primary)] hover:text-white transition-all"
-                >
-                  Book Appointment
-                </NavLink>
               </div>
 
             </div>
@@ -279,20 +272,20 @@ const Home = () => {
           <div className="text-center max-w-[700px] mx-auto">
             <p className="text-sm tracking-[4px] uppercase text-[var(--bg-primary)] font-medium">Our Services</p>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif text-gray-900">Our Popular Services</h2>
-            <p className="mt-5 text-gray-600 leading-7">Discover our range of beauty and salon services, thoughtfully designed to help you look and feel your best.</p>
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">Discover our range of beauty and salon services, thoughtfully designed to help you look and feel your best.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6 mt-8 sm:mt-10 lg:mt-12">
             {servicesData.map((service, index) => (
-              <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="h-[260px] overflow-hidden">
+              <div key={index} className="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                <div className="h-[150px] sm:h-[210px] lg:h-[260px] overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
-                  <p className="mt-3 text-sm text-gray-600 leading-6">{service.description}</p>
-                  <NavLink to="/services" className="inline-block mt-5 text-[var(--bg-primary)] font-medium hover:opacity-80">Explore Service →</NavLink>
+                <div className="p-3 sm:p-5 lg:p-6">
+                  <h3 className="text-sm sm:text-lg lg:text-xl font-semibold text-gray-900">{service.title}</h3>
+                  <p className="mt-2 sm:mt-3 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">{service.description}</p>
+                  <NavLink to="/services" className="inline-block mt-3 sm:mt-5 text-xs sm:text-sm text-[var(--bg-primary)] font-medium hover:opacity-80">Explore Service →</NavLink>
                 </div>
               </div>
             ))}
@@ -323,26 +316,26 @@ const Home = () => {
               Beauty Care Made Special
             </h2>
 
-            <p className="mt-5 text-gray-600 leading-7">
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">
               At The Heart Beauty, we combine professional care, premium products and a relaxing atmosphere to give you an experience you truly deserve.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6 mt-8 sm:mt-10 lg:mt-12">
             {whyChooseData.map((item, index) => (
               <div
                 key={index}
-                className="group text-center p-7 rounded-2xl border border-gray-100 bg-white hover:bg-white hover:shadow-xl transition-all duration-300"
+                className="group text-center p-3 sm:p-5 lg:p-7 rounded-xl sm:rounded-2xl border border-gray-100 bg-white hover:bg-white hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-[var(--bg-primary)] text-white text-2xl group-hover:scale-110 transition-transform duration-300">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mx-auto flex items-center justify-center rounded-full bg-[var(--bg-primary)] text-white text-lg sm:text-xl lg:text-2xl group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold text-gray-900">
+                <h3 className="mt-3 sm:mt-5 lg:mt-6 text-sm sm:text-lg lg:text-xl font-semibold text-gray-900">
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm text-gray-600 leading-6">
+                <p className="mt-2 sm:mt-3 text-[11px] sm:text-sm text-gray-600 leading-5 sm:leading-6">
                   {item.description}
                 </p>
               </div>
@@ -354,7 +347,6 @@ const Home = () => {
 
 
       {/* Gallery Section */}
-
 
 
       <section className="w-full py-16 sm:py-20 lg:py-10 bg-[var(--bg-primary2)]">
@@ -369,7 +361,7 @@ const Home = () => {
               A Glimpse of Beauty
             </h2>
 
-            <p className="mt-5 text-gray-600 leading-7">
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">
               Explore our beauty transformations, relaxing experiences and beautiful salon moments.
             </p>
           </div>
@@ -378,7 +370,7 @@ const Home = () => {
             {galleryData.map((item, index) => (
               <div
                 key={index}
-                className="group relative h-[220px] sm:h-[280px] lg:h-[320px] rounded-2xl overflow-hidden"
+                className="group relative h-[150px] sm:h-[230px] lg:h-[320px] rounded-xl sm:rounded-2xl overflow-hidden"
               >
                 <img
                   src={item.image}
@@ -387,8 +379,8 @@ const Home = () => {
                 />
 
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
-                  <div className="w-full p-5 translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                    <h3 className="text-white text-lg font-semibold">
+                  <div className="w-full p-3 sm:p-5 translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                    <h3 className="text-white text-sm sm:text-lg font-semibold">
                       {item.title}
                     </h3>
                   </div>
@@ -420,28 +412,28 @@ const Home = () => {
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif text-gray-900">
               What Our Clients Say
             </h2>
-            <p className="mt-5 text-gray-600 leading-7">
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">
               We love making our clients feel confident, beautiful and special.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 lg:gap-6 mt-8 sm:mt-10 lg:mt-12">
             {testimonialsData.map((item, index) => (
               <div
                 key={index}
-                className="p-7 rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition-all duration-300"
+                className="p-3 sm:p-5 lg:p-7 rounded-xl sm:rounded-2xl bg-white border border-gray-100 hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex gap-1 text-[var(--bg-primary)] text-lg">
+                <div className="flex gap-1 text-[var(--bg-primary)] text-sm sm:text-lg">
                   ★★★★★
                 </div>
-                <p className="mt-5 text-gray-600 leading-7">
+                <p className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-gray-600 leading-5 sm:leading-7">
                   "{item.review}"
                 </p>
-                <div className="mt-6">
-                  <h3 className="text-lg font-semibold text-gray-900">
+                <div className="mt-4 sm:mt-6">
+                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900">
                     {item.name}
                   </h3>
-                  <p className="mt-1 text-sm text-[var(--bg-primary)]">
+                  <p className="mt-1 text-[11px] sm:text-sm text-[var(--bg-primary)]">
                     {item.role}
                   </p>
                 </div>
@@ -450,12 +442,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer/>
-
-
-
-    
-
+      <Footer />
 
     </>
   )

@@ -40,7 +40,6 @@ const Navbar = () => {
                         <NavLink to="/gallery" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Gallery</NavLink>
                         <NavLink to="/pricing" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Pricing</NavLink>
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Contact</NavLink>
-                        <NavLink to="/appointment" onClick={() => setMenuOpen(false)} className="block mt-2 px-4 py-3 text-center bg-pink-600 text-white rounded-lg">Appointment</NavLink>
                     </div>
                 )}
             </div>
