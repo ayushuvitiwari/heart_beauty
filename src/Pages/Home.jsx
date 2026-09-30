@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import { NavLink } from "react-router-dom"
-import FooterTop from '../Components/FooterTop'
 import Footer from '../Components/Footer'
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -225,7 +224,7 @@ const Home = () => {
             </div>
 
             <div>
-              <p className="text-sm tracking-[4px] uppercase text-pink-600 font-medium">
+              <p className="text-sm tracking-[4px] uppercase text-[var(--bg-primary)] font-medium">
                 About Us
               </p>
 
@@ -248,7 +247,7 @@ const Home = () => {
               <div className="mt-8 flex flex-wrap gap-4">
                 <NavLink
                   to="/about"
-                  className="px-6 py-3 rounded-full bg-[var(--bg-primary)] text-white font-medium hover:bg-pink-700 transition-all"
+                  className="px-6 py-3 rounded-full bg-[var(--bg-primary)] text-white font-medium hover:scale-104 transition-all duration-200"
                 >
                   Discover More
                 </NavLink>
@@ -451,8 +450,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <FooterTop />
       <Footer/>
 
 

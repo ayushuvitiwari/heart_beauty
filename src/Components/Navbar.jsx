@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-sm">
-            <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
                 <nav className="h-20 flex items-center justify-between overflow-hidden px-1">
 
                     <NavLink to="/">
@@ -23,13 +23,6 @@ const Navbar = () => {
                         <NavLink to="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Pricing</NavLink>
                         <NavLink to="/contact" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Contact</NavLink>
                     </div>
-
-                    <NavLink
-                        to="/appointment"
-                        className="hidden lg:block px-6 py-3 rounded-full bg-[var(--bg-primary)] text-white text-sm font-semibold hover:scale-104 transition-all duration-200"
-                    >
-                        Appointment
-                    </NavLink>
 
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
