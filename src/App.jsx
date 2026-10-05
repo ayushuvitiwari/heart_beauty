@@ -5,11 +5,13 @@ import Services from './Pages/Services'
 import About from './Pages/About'
 import Gallery from './Pages/Gallery'
 import Contact from './Pages/Contact'
+import ScrollToTop from './Components/ScrollToTop'
 
 const App = () => {
   return (
     <>
     <Router>
+       <ScrollToTop />
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
