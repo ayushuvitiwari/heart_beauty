@@ -210,21 +210,21 @@ const Home = () => {
 
 
 
-      <section className="w-full py-16 sm:py-20 lg:py-18 bg-[var(--bg-primary2)]">
+      <section className="w-full py-12 sm:py-16 lg:py-20 bg-[var(--bg-primary2)]">
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
 
-            <div className="h-[400px] sm:h-[500px] flex items-center justify-center">
+            <div className="w-full flex items-center justify-center">
               <img
                 src={AboutImg}
                 alt="The Heart Beauty Salon"
-                className="w-110 h-130 object-cover"
+                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[440px] h-[380px] sm:h-[480px] lg:h-[520px] object-cover rounded-xl"
               />
             </div>
 
-            <div>
-              <p className="text-sm tracking-[4px] uppercase text-[var(--bg-primary)] font-medium">
+            <div className="w-full">
+              <p className="text-sm sm:text-base tracking-[3px] sm:tracking-[4px] uppercase text-[var(--bg-primary)] font-medium">
                 About Us
               </p>
 
@@ -232,7 +232,7 @@ const Home = () => {
                 Where Beauty Meets Confidence
               </h2>
 
-              <p className="mt-6 text-gray-600 leading-7">
+              <p className="mt-5 sm:mt-6 text-gray-600 leading-7">
                 At The Heart Beauty, we believe beauty is more than just
                 appearance. It is about feeling confident, comfortable
                 and truly yourself.
@@ -244,7 +244,7 @@ const Home = () => {
                 techniques.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-6 sm:mt-8 flex flex-wrap gap-4">
                 <NavLink
                   to="/about"
                   className="px-6 py-3 rounded-full bg-[var(--bg-primary)] text-white font-medium hover:scale-104 transition-all duration-200"
@@ -259,7 +259,6 @@ const Home = () => {
 
         </div>
       </section>
-
 
 
 

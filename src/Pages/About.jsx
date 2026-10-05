@@ -2,6 +2,10 @@ import React from "react";
 import Header from '../Components/Navbar'
 import { FaHeart, FaStar, FaSpa, FaUserCheck } from "react-icons/fa";
 import Footer from "../Components/Footer";
+import Homeimg from '../images/HomeSalider2.webp'
+import About1 from '../images/Mackup-service.jpg'
+import G1 from '../images/G1.jpg'
+import G2 from '../images/G2.jpg'
 
 const About = () => {
   return (
@@ -11,11 +15,11 @@ const About = () => {
 
         <section className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
           <img
-            src="/about-hero.jpg"
+            src={Homeimg}
             alt="Heart Beauty"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/45"></div>
+          <div className="absolute inset-0 bg-black/65"></div>
 
           <div className="relative z-10 text-center text-white px-5 max-w-3xl">
             <p className="text-sm sm:text-base uppercase tracking-[5px] mb-4">
@@ -36,7 +40,7 @@ const About = () => {
 
             <div className="relative">
               <img
-                src="/about-story.jpg"
+                src={About1}
                 alt="Heart Beauty Salon"
                 className="w-full h-[400px] sm:h-[500px] object-cover rounded-3xl"
               />
@@ -170,12 +174,12 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/beauty-1.jpg"
+                src={G1}
                 alt="Beauty Service"
                 className="w-full h-64 sm:h-80 object-cover rounded-3xl"
               />
               <img
-                src="/beauty-2.jpg"
+                src={G2}
                 alt="Beauty Treatment"
                 className="w-full h-64 sm:h-80 object-cover rounded-3xl mt-8"
               />
@@ -184,7 +188,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="w-full py-16 sm:py-20 bg-[#c76b7b] text-white">
+        <section className="w-full py-16 sm:py-20 bg-[var(--bg-primary2)] text-black">
           <div className="max-w-[800px] mx-auto px-5 text-center">
 
             <FaHeart className="mx-auto text-3xl mb-5" />
@@ -193,7 +197,7 @@ const About = () => {
               Ready To Feel Your Best?
             </h2>
 
-            <p className="mt-4 text-white/90">
+            <p className="mt-4 text-black">
               Treat yourself to a beautiful experience at Heart Beauty.
             </p>
 

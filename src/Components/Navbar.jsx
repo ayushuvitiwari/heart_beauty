@@ -20,7 +20,6 @@ const Navbar = () => {
                         <NavLink to="/about" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">About</NavLink>
                         <NavLink to="/services" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Services</NavLink>
                         <NavLink to="/gallery" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Gallery</NavLink>
-                        <NavLink to="/pricing" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Pricing</NavLink>
                         <NavLink to="/contact" className="text-[15px] font-medium text-gray-700 hover:text-[var(--bg-primary)]">Contact</NavLink>
                     </div>
 
@@ -38,7 +37,6 @@ const Navbar = () => {
                         <NavLink to="/about" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">About</NavLink>
                         <NavLink to="/services" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Services</NavLink>
                         <NavLink to="/gallery" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Gallery</NavLink>
-                        <NavLink to="/pricing" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Pricing</NavLink>
                         <NavLink to="/contact" onClick={() => setMenuOpen(false)} className="block px-4 py-3 text-gray-700">Contact</NavLink>
                     </div>
                 )}

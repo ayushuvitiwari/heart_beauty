@@ -15,7 +15,7 @@ const Footer = () => {
                         </p>
 
                         <div className="flex items-center gap-2 sm:gap-4 mt-5 sm:mt-6">
-                            <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--bg-primary)] transition-all">
+                            <a href="https://www.instagram.com/_the_heart_beauty_/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--bg-primary)] transition-all">
                                 <FiInstagram />
                             </a>
                             <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--bg-primary)] transition-all">
@@ -34,8 +34,7 @@ const Footer = () => {
                             <NavLink to="/" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Home</NavLink>
                             <NavLink to="/about" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">About</NavLink>
                             <NavLink to="/services" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Services</NavLink>
-                            <NavLink to="/gallery" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Gallery</NavLink>
-                            <NavLink to="/pricing" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Pricing</NavLink>
+                        <NavLink to="/gallery" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Gallery</NavLink>
                             <NavLink to="/contact" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-all">Contact</NavLink>
                         </div>
                     </div>
