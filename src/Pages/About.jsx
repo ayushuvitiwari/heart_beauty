@@ -2,7 +2,7 @@ import React from "react";
 import Header from '../Components/Navbar'
 import { FaHeart, FaStar, FaSpa, FaUserCheck } from "react-icons/fa";
 import Footer from "../Components/Footer";
-import Homeimg from '../images/HomeSalider2.webp'
+import Homeimg from '../images/HomeSalider2.png'
 import About1 from '../images/Mackup-service.jpg'
 import G1 from '../images/G1.jpg'
 import G2 from '../images/G2.jpg'

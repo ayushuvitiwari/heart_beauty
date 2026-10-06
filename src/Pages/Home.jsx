@@ -8,21 +8,15 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import Image1 from "../images/HomeSalider1.webp";
-import Image2 from "../images/HomeSalider2.webp";
-import Image3 from "../images/HomeSalider3.webp";
+import Image1 from "../images/HomeSalider2.png";
+import Image2 from "../images/HomeSalider1.png";
+import Image3 from "../images/HomeSalider3.png";
 
-import AboutImg from "../images/HomeAbout.webp";
-import HairImg from "../images/Hair-services.jpg";
-import FacialImg from "../images/Hair-Service-2.jpg";
-import MakeupImg from "../images/Mackup-service.jpg";
-import NailImg from "../images/Mackup-service.jpg";
-import Gallery1 from "../images/G1.jpg";
-import Gallery2 from "../images/G2.jpg";
-import Gallery3 from "../images/G3.jpg";
-import Gallery4 from "../images/G4.jpg";
-import Gallery5 from "../images/G5.jpg";
-import Gallery6 from "../images/G2.jpg";
+import AboutImg from "../images/HomeAbout.png";
+import Gallery1 from "../images/H1.webp";
+import Gallery2 from "../images/H2.webp";
+import Gallery3 from "../images/H3.webp";
+import Gallery4 from "../images/H4.webp";
 
 const Home = () => {
 
@@ -30,22 +24,22 @@ const Home = () => {
     {
       title: "Hair Styling",
       description: "Beautiful haircuts, styling and treatments for your perfect look.",
-      image: HairImg,
+      image: Gallery1,
     },
     {
       title: "Facial & Skincare",
       description: "Refresh your skin with relaxing facials and skincare treatments.",
-      image: FacialImg,
+      image: Gallery2,
     },
     {
       title: "Makeup",
       description: "Get a flawless look for weddings, parties and special occasions.",
-      image: MakeupImg,
+      image: Gallery3,
     },
     {
       title: "Nail Care",
       description: "Complete your style with beautiful nails and professional care.",
-      image: NailImg,
+      image: Gallery4,
     },
   ];
 
@@ -76,9 +70,6 @@ const Home = () => {
     { image: Gallery1, title: "Hair Styling" },
     { image: Gallery2, title: "Beauty Makeup" },
     { image: Gallery3, title: "Facial Care" },
-    { image: Gallery4, title: "Nail Care" },
-    { image: Gallery5, title: "Bridal Look" },
-    { image: Gallery6, title: "Salon Experience" },
   ];
 
   const testimonialsData = [
@@ -219,7 +210,7 @@ const Home = () => {
               <img
                 src={AboutImg}
                 alt="The Heart Beauty Salon"
-                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[440px] h-[380px] sm:h-[480px] lg:h-[520px] object-cover rounded-xl"
+                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[440px] h-[380px] sm:h-[480px] lg:h-[520px] object-cover rounded-[30px]"
               />
             </div>
 

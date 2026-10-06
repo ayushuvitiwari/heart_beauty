@@ -132,8 +132,10 @@ const Contact = () => {
                       </h3>
 
                       <p className="mt-1 text-gray-600 text-sm leading-6">
-                        Your Salon Address,<br />
-                        Your City, India
+
+                        Ganesh square, F 15 16, 500 Quarter Rd,
+                         nr. pnb bank, GIDC, Timber Market, Ankleshwar GIDC,
+                          Ankleshwar, Gujarat 393002, India
                       </p>
                     </div>
                   </div>
